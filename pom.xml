@@ -92,6 +92,14 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<compilerArgs>--enable-preview</compilerArgs>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<reporting>
@@ -138,7 +146,7 @@
 	<distributionManagement>
 		<site>
 			<id>shrek</id>
-			<url>scp://@shrek.unideb.hu:2222/home/jeszy/public_html/${project.artifactId}</url>
+			<url>scp://evelinnagy99@shrek.unideb.hu:2222/home/evelinnagy99/public_html/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 </project>
